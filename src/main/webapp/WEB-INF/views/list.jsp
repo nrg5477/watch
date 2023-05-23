@@ -11,8 +11,6 @@
         <th>email</th>
         <th>password</th>
         <th>name</th>
-        <th>age</th>
-        <th>mobile</th>
         <th>조회</th>
         <th>삭제</th>
     </tr>
@@ -25,8 +23,6 @@
             </td>
             <td>${member.memberPassword}</td>
             <td>${member.memberName}</td>
-            <td>${member.memberAge}</td>
-            <td>${member.memberMobile}</td>
             <td>
                 <a href="/member?id=${member.id}">조회</a>
             </td>

@@ -5,15 +5,13 @@
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <form action="/member/save" method="post">
-        <input type="text" name="memberEmail" placeholder="이메일" id="memberEmail" onblur="emailCheck()">
-        <p id="check-result"></p>
-        <input type="text" name="memberPassword" placeholder="비밀번호">
-        <input type="text" name="memberName" placeholder="이름">
-        <input type="text" name="memberAge" placeholder="나이">
-        <input type="text" name="memberMobile" placeholder="전화번호">
-        <input type="submit" value="회원가입">
-    </form>
+<form action="/member/save" method="post">
+    <input type="text" name="memberEmail" placeholder="이메일" id="memberEmail" onblur="emailCheck()">
+    <p id="check-result"></p>
+    <input type="text" name="memberPassword" placeholder="비밀번호">
+    <input type="text" name="memberName" placeholder="이름">
+    <input type="submit" value="회원가입">
+</form>
 </body>
 <script>
     //이메일 입력값을 가져오고, 입력값을 서버로 전송하고 똑같은 이메일이 있는지 체크한 후, 사용 가능 여부를 이메일 입력창 아래에 표시

@@ -6,11 +6,9 @@
 <body>
 <form action="/member/update" method="post" name="updateForm">
     id: <input type="text" name="id" value="${member.id}"readonly>
-    email: <input type="text" name="memberEmail" value="${member.memberEmail}"readonly>
+    email: <input type="text" name="memberEmail" value="${member.memberEmail}">
     password: <input type="text" name="memberPassword" id="memberPassword">
     name: <input type="text" name="memberName" value="${member.memberName}" readonly>
-    age: <input type="text" name="memberAge" value="${member.memberAge}">
-    mobile: <input type="text" name="memberMobile" value="${member.memberMobile}">
     <input type="button" value="수정" onclick="update()">
 
 </form>

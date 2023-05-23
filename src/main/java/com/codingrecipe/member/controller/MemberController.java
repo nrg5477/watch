@@ -83,8 +83,8 @@ public class MemberController {
 
     @PostMapping("/update")
     public String update(@ModelAttribute MemberDTO memberDTO){
-        boolean resulte = memberService.update(memberDTO);
-        if (resulte){
+        boolean result = memberService.update(memberDTO);
+        if (result){
             return "redirect:/member?id="+memberDTO.getId();
         }
         else {
